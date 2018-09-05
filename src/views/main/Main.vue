@@ -1,6 +1,6 @@
 <template>
     <v-layout row wrap align-left>
-        <v-flex xs12 md8 offset-md2>
+        <v-flex xs12 md8>
             <div v-for="post in posts" :key="post.title">
                 <v-card class="my-3" hover>
                     <v-card-media
@@ -29,7 +29,7 @@
                             <v-icon medium>fa-facebook</v-icon>
                         </v-btn>
                         <v-spacer></v-spacer>
-                        <v-btn flat class="blue--text">Read More</v-btn>
+                        <v-btn flat class="blue--text">阅读</v-btn>
                     </v-card-actions>
                 </v-card>
             </div>

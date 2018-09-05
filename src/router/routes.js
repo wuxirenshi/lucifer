@@ -4,6 +4,7 @@ import Share from '../views/achieve/Share'
 import Accumulate from '../views/achieve/Accumulate'
 import About from '../views/about/About'
 import Main from '../views/main/Main'
+import Login from '../views/home/Login'
 
 export const routes = [
   {
@@ -31,5 +32,9 @@ export const routes = [
         component: Main
       },
     ]
+  },
+  {
+    path: '/login',
+    component: Login,
   }
 ];

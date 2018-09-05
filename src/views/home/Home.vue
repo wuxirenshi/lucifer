@@ -4,7 +4,8 @@
       :clipped="$vuetify.breakpoint.lgAndUp"
       v-model="drawer"
       fixed
-      app>
+      app
+    >
       <nav-bar></nav-bar>
     </v-navigation-drawer>
     <v-toolbar
@@ -15,7 +16,7 @@
       fixed>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        <span class="hidden-sm-and-down">Lucifer 徐晓东个人博客</span>
+        <span class="hidden-sm-and-down">徐晓东个人博客</span>
       </v-toolbar-title>
       <tool-bar></tool-bar>
     </v-toolbar>
