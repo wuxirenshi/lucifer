@@ -31,6 +31,10 @@ export const routes = [
         path: '/main',
         component: Main
       },
+      {
+        path: '/',
+        redirect: '/main'
+      },
     ]
   },
   {

@@ -8,18 +8,7 @@
     >
       <nav-bar></nav-bar>
     </v-navigation-drawer>
-    <v-toolbar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="blue darken-3"
-      dark
-      app
-      fixed>
-      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-        <v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>
-        <span class="hidden-sm-and-down">徐晓东个人博客</span>
-      </v-toolbar-title>
-      <tool-bar></tool-bar>
-    </v-toolbar>
+    <tool-bar :drawer="drawer" :updateDrawer="updateDrawer"></tool-bar>
     <v-content>
       <v-container fluid fill-height>
         <router-view></router-view>
@@ -47,6 +36,11 @@
     },
     data: () => ({
       drawer: null,
-    })
+    }),
+    methods: {
+      updateDrawer(value){
+        this.drawer = value
+      }
+    }
   }
 </script>
