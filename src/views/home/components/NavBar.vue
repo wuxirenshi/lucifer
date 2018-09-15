@@ -1,11 +1,24 @@
 <template>
   <v-list dense>
+    <v-list class="pa-0">
+      <v-list-tile avatar>
+        <v-list-tile-avatar>
+          <img src="https://randomuser.me/api/portraits/men/85.jpg">
+        </v-list-tile-avatar>
+
+        <v-list-tile-content>
+          <v-list-tile-title>徐晓东</v-list-tile-title>
+        </v-list-tile-content>
+      </v-list-tile>
+    </v-list>
+    <v-divider></v-divider>
     <template v-for="(item, index) in items">
       <v-layout
         v-if="item.heading"
         :key="item.heading"
         row
         align-center
+        class="white--text"
       >
         <v-flex xs6>
           <v-subheader v-if="item.heading">
@@ -77,7 +90,6 @@
         },
       items: [
         {icon: 'home', text: '首页', route: '/main'},
-        {divider: true},
         {icon: 'perm_identity', text: '关于我', route: '/about'},
         {icon: 'toc', text: '技术分享', route: '/share'},
         {icon: 'book', text: '学习积累', route: '/accumulate'},

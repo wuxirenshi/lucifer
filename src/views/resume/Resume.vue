@@ -5,7 +5,7 @@
         <v-btn color="success" @click="doPrintVue">打印</v-btn>
       </div>
       <iframe id="frame" width=100% height=100% frameborder=0 scrolling=auto style="margin-bottom: 40px"
-              src="http://itblog.work/resume"></iframe>
+              :src="resume"></iframe>
     </div>
     <v-snackbar
       v-model="snackbar"
@@ -53,10 +53,12 @@
       valid: false,
       message: '验证码错误，请重新输入！',
       code: '',
+      resume: ''
     }),
     methods: {
       handleCheck() {
         if (this.code === '519007') {
+          this.resume = 'http://itblog.work/resume';
           this.frame_show = true;
           this.dialog = false;
         }

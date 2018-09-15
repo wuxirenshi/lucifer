@@ -1,11 +1,16 @@
 <template>
-    <div>1adf</div>
+
+  <div></div>
 </template>
 
 <script>
-    export default {
-        name: "About"
-    }
+
+  export default {
+    name: "About",
+    data: ()=>({
+
+    })
+  }
 </script>
 
 <style scoped>

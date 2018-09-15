@@ -38,9 +38,9 @@
       drawer: null,
     }),
     methods: {
-      updateDrawer(value){
+      updateDrawer(value) {
         this.drawer = value
-      }
-    }
+      },
+    },
   }
 </script>
